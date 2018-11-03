@@ -119,14 +119,14 @@ export default class LaunchScreen extends Component {
                   ItemSeparatorComponent={this.renderSeparator}
                   keyExtractor= {(item) => item.name}
               />
-              <View style={{alignItems:'center',marginTop: 10}}>
+              <TouchableOpacity style={{flex:1, alignSelf: 'center'}}>
               <ImageBackground 
                 source={images.expenseBtn}
-                style={{flex: 1,width: 80, height:70,position: 'absolute'}}
+                style={{width: 80, height:70}}
               >
                 <Text style={{color: '#fff'}}>Add new</Text>
               </ImageBackground>
-              </View>
+              </TouchableOpacity>
       
 
            </View> 
